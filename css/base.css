@@ -1,0 +1,28 @@
+html, body{
+    background-color: #111;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Trebuchet MS, Tahoma, Arial;
+    color: #555;
+}
+
+header{
+    padding: 10px 30px;
+    background-image: -moz-linear-gradient(#FAFAFA, #E5E5E5);
+    background-image: -webkit-gradient(linear, from(#FAFAFA), to(#E5E5E5));
+    border-bottom: 1px solid #F0F0F0;
+}
+header h1{
+    margin: 0;
+}
+
+#main-content{
+    padding: 10px 30px;
+}
+
+
+br.clear{
+    clear: both;
+}

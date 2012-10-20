@@ -1,0 +1,250 @@
+#st-root{
+    width:100%;
+    height: 100%;
+    background: #111;
+}
+#st-root .need-pc-message{
+    color: #888;
+    font-size: 75px;
+    width: 100%;
+    height: 100%;
+}
+#st-root .need-pc-message a{
+    display: block;
+    color: #338;
+    font-size: 20px;
+    padding: 100px 30px;
+    text-align: right;
+}
+
+#st-root .elm-cover{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    cursor: default;
+}
+#st-root .elm-cover.blind{
+    background: #000;
+}
+
+#st-root .elm-cover .message.start-logo{
+    color: #EEEEEE;
+    font-size: 160px;
+    font-weight: bolder;
+    margin-top: 100px;
+    position: relative;
+}
+#st-root .elm-cover .message.start-logo:after{
+    border-color: transparent transparent #999900;
+    border-style: solid;
+    border-width: 0 0 220px 220px;
+    bottom: 35px;
+    content: "";
+    position: absolute;
+    right: -3px;
+    z-index: -1;
+}
+#st-root .elm-cover .message{
+    margin: 2em 0;
+    color: #EEE;
+    display: inline-block;
+    font-size: 4em;;
+}
+
+
+/******************
+ clear-message
+******************/
+#st-root .clear-message-container{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #EEE;
+    text-align: center;
+}
+#st-root .clear-message-container-cover{
+    background-color: #33E;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+}
+#st-root .clear-message-container .clear-message-text{
+    font-size: 4em;
+    color: #333;
+    padding-top: 200px;
+    display: inline-block;
+}
+#st-root .clear-message-container .logo,
+#st-root .clear-message-container .logo:hover{
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #888;
+}
+#st-root .clear-message-container .logo:after{
+    border-color: transparent transparent #888833;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    z-index: -1;
+}
+#st-root .clear-message-container .me{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    padding: 0.5em 1em;
+    color: #aaa;
+}
+#st-root .clear-message-container .me a{
+    text-decoration: none;
+    color: #999;
+}
+#st-root .clear-message-container .me a:hover{
+    text-decoration: underline;
+}
+
+/******************
+ play-box
+******************/
+#st-root .play-box{
+    width:100%;
+    height: 100%;
+    position: relative;
+    cursor: url(../no-cursor.cur), text;
+}
+
+#st-root .play-box canvas{
+    cursor: url(../no-cursor.cur), text;
+}
+#st-root .play-box .canvas-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    cursor: text;
+    left: 0;
+    top:0;
+    background-color: rgba(255,255,0,0.2);
+}
+
+
+#st-root .play-box canvas{
+    background: #101010;
+}
+#st-root .play-box.pausing canvas{
+    cursor: default;
+}
+#st-root .play-box .start-button-container,
+#st-root .play-box .retry-button-container{
+    position: absolute;
+    z-index: 1000;
+    bottom: 20%;
+    text-align: center;
+    width:100%;
+}
+#st-root .play-box .start-button,
+#st-root .play-box .retry-button{
+    color: #EEE;
+    border: 3px solid #EEE;
+    padding: 0.5em 5.1em;
+    font-size: 3em;
+}
+#st-root .play-box .start-button:hover,
+#st-root .play-box .retry-button:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.2);
+}
+#st-root .play-box .start-button:active,
+#st-root .play-box .retry-button:active{
+    box-shadow: 1px 1px 2px rgba(0,0,0,0,0.9) inset;
+    background-color: #EEE;
+    color: #111;
+}
+
+
+#st-root .play-box .resume-button{
+    display: block;
+    position: absolute;
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    border:1px solid #EEE;
+    z-index: 120;
+    cursor: pointer;
+}
+#st-root .play-box .resume-button:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+#st-root .play-box .resume-message{
+    position: absolute;
+    left: -150%;
+    top: -80%;
+    color: rgba(255,255,255,0.4);
+    width:400%;
+    height: 260%;
+}
+#st-root .play-box .resume-message-text{
+    position: absolute;
+    font-size: 2em;
+    display: inline-block;
+    padding: 1em;
+}
+
+
+#st-root .play-box .resume-message-arrow-container{
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+}
+#st-root .play-box .resume-message-arrow{
+    border-color:transparent transparent rgba(255,255,255,0.4);
+    border-style: solid;
+    border-width: 0 30px 30px;
+    margin: 220% auto auto;
+    width: 0;
+}
+
+
+#st-root .play-box .shoot-down-counter{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    color: #BBB;
+    font-size: 8px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#st-root .play-box .shoot-down-counter .shoot-down-counter-label{
+}
+#st-root .play-box .shoot-down-counter .shoot-down-counter-text{
+    display: inline-block;
+    width:2em;
+    text-align: right;
+    font-size: 1.5em;
+}
+/******************
+******************/

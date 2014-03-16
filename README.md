@@ -1,7 +1,7 @@
 SHOTek
 ======
 
-A shooting game written with client side javascript.
+A shooting game written written in JavaScript.
 Open the index.html with a browser and the game will begin.
 
 [SHOTek]: http://okunishinishi.github.io/SHOTek/
